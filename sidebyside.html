@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div style="border: 5px solid blue; padding: 15px;">
+            <p><b>Player 1 view</b> - move with LEFT and RIGHT arrow keys<br> Lag = <input type="text" id="player1_lag" size="5" value="250" onchange="updateParameters();">ms · <input type="checkbox" id="player1_prediction" onchange="updateParameters();">Prediction · <input type="checkbox" id="player1_reconciliation" onchange="updateParameters();">Reconciliation · <input type="checkbox" id="player1_interpolation" onchange="updateParameters();">Interpolation</p>
+            <canvas id="player1_canvas" width="920" height="75">
+            </canvas>
+            <div id="player1_status" style="font-family:courier;">Non-acknowledged inputs: 0</div>
+            </div>
+        
+        <div style="border: 2px solid grey; padding: 15px;">
+            <p><b>Server view</b> · Update <input type="text" id="server_fps" size="5" value="3" onchange="updateParameters();"> times per second</p>
+            <canvas id="server_canvas" width="920" height="75">
+            </canvas>
+            <div id="server_status" style="font-family:courier;">Last acknowledged input: Player 0: #17   Player 1: #0   </div>
+        </div>
+        
+        <div style="border: 5px solid red; padding: 15px;">
+            <p><b>Player 2 view</b> - move with A and D keys<br> Lag = <input type="text" id="player2_lag" size="5" value="150" onchange="updateParameters();">ms · <input type="checkbox" id="player2_prediction" onchange="updateParameters();">Prediction · <input type="checkbox" id="player2_reconciliation" onchange="updateParameters();">Reconciliation · <input type="checkbox" id="player2_interpolation" onchange="updateParameters();">Interpolation</p>
+            <canvas id="player2_canvas" width="920" height="75">
+            </canvas>
+            <div id="player2_status" style="font-family:courier;">Non-acknowledged inputs: 0</div>
+        </div>
+
+        
+        <script type="text/javascript" src="code.js"></script>
+    </body>
+</html>
+

@@ -1,2 +1,1 @@
-"# Game-Latency" 
-"# Game-Latency" 
+"# Game-Latency"
